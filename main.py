@@ -1,5 +1,6 @@
 import math
 
+
 class Coordinates:
     def __init__(self):
         self.x_coordinate = '0.0N'
@@ -43,7 +44,7 @@ class Coordinates:
             x_distance = abs(self.x_numeric - other.x_numeric)
 
         else:
-            x_distance = self.numeric + other.numeric
+            x_distance = self.x_numeric + other.y_numeric
 
         x_distance = x_distance
         print(x_distance)
@@ -59,7 +60,8 @@ class Coordinates:
 
         sum_of_squares = (x_distance*x_distance) + (y_distance*y_distance)
         distance = math.sqrt(sum_of_squares)
-        print(distance)
+
+        print(distance*111)
 
 
 A = Coordinates()
