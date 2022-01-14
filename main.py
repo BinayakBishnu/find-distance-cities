@@ -61,7 +61,7 @@ class Coordinates:
         sum_of_squares = (x_distance*x_distance) + (y_distance*y_distance)
         distance = math.sqrt(sum_of_squares)
 
-        print(distance*111)
+        print(round(distance*111, 3))
 
 
 A = Coordinates()
